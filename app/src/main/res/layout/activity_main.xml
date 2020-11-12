@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:text="TELEPON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnpgl"
+        android:onClick="panggil"
+        />
+    <Button
+        android:text="BUKA BROWSER "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnpgl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/btnbuka"
+        android:onClick="buka"/>
+
+    <Button
+        android:id="@+id/btnwhtsapp"
+        android:layout_below="@+id/btnbuka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="bukaWa"
+        android:text="Whatsapp" />
+    <Button
+        android:id="@+id/btnemail"
+        android:layout_below="@+id/btnwhtsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="bukaemail"
+        android:text="email" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnemail"
+        android:onClick="onButtonTap"
+        android:text="Kirim Email"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+</RelativeLayout>
